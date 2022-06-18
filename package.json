@@ -1,0 +1,22 @@
+{
+  "name": "aws-node-express-api-project",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "sls offline start",
+    "log": "sls logs --function",
+    "deploy": "sls deploy --stage dev --verbose",
+    "deploy-production": "sls deploy --stage production --verbose",
+    "delete-deploy": "sls remove --stage dev --region us-east-2",
+    "delete-deploy-production": "sls remove --stage production --region us-east-2"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.17.1",
+    "serverless-http": "^2.7.0"
+  },
+  "devDependencies": {
+    "serverless-offline": "^8.8.0",
+    "serverless-prune-plugin": "^2.0.1"
+  }
+}
